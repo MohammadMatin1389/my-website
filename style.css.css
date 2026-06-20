@@ -1,0 +1,97 @@
+/* تنظیمات کلی برای حذف فاصله های اضافی */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tahoma' , sans-serif; /* یا هر فونت دیگری */
+}
+
+/* استایل منو بار */
+.navbar {
+    background-color: #333; /* رنگ پس زمینه تیره */
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* جدا کردن لوگو از لینک ها */
+    align-items: center;
+    padding: 0 50px;
+    direction: rtl; /* برای راست چین شدن منو */
+}
+
+/* استایل لوگو */
+.logo {
+    color:aqua;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* استایل لیست لیتک ها */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px; /* فاصله بین آیتم ها */
+}
+
+/* استایل لینک ها */
+.nav-links a {
+    color:white;
+    text-decoration: none; /* حذف خط زیر لینک ها */
+    font-size: 18px;
+    transition: 0.3s; /* برای نرم شدن تغییر رنگ هنگام نگه داشتن موس */
+}
+
+/* افکت هنگام نگه داشتن موس روی لینک ها (Hover) */
+.nav-links a:hover {
+    color:aqua;
+}
+
+/* استایل کلی برای نگه داشتن عکس و متن کنار هم */
+.content-container {
+    display: flex; /* استفاده از فلکس باکس برای چیدمان */
+    align-items: center; /* وسط چین عمودی */
+    padding: 20px;
+    direction: rtl; /* راست چین کردن کل محتوا */
+    gap: 20px; /* فاصله بین عکس و متن */
+}
+
+/* استایل عکس */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid aqua;
+}
+
+.text-content {
+    flex-grow: 1;
+    color:white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.profile-image {
+    /* هرچه این اعداد را کمتر کنید */
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid aqua;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    direction: rtl;
+    gap: 20px;
+
+    /* این خط جادو میکند */
+    flex-direction: row-reverse;
+}
