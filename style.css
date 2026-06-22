@@ -95,3 +95,15 @@ body {
     /* این خط جادو میکند */
     flex-direction: row-reverse;
 }
+
+@media (max-width: 768px)
+    .content-container {
+        flex-direction: column; important
+        text-align center
+    }
+
+.profile-image {
+
+        width: 150px;
+        height: 150px;
+   }
